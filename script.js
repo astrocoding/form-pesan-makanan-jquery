@@ -15,6 +15,6 @@ $(document).ready(function() {
                        (esTehPrice * esTehQty) +
                        (kopiPrice * kopiQty);
       
-      $("#totalPrice").text("Total Harga: Rp " + totalPrice.toLocaleString("id-ID"));
+      $("#totalPrice").text("Total Harga: Rp. " + totalPrice.toLocaleString("id-ID"));
   });
 });
