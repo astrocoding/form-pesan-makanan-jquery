@@ -1,16 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #858181;
+  --bg: #FAEBD7;
+  --box: #1667c4;
+  --btn: #4CAF50;
+  --btn-hover: #358f39;
+  --fontme: 'Quicksand', sans-serif;
+}
+
 .container {
+  font-family: var(--fontme);
   width: 50vh;
   height: auto;
   margin: 4em auto 1em;
-  background-color: antiquewhite;
+  background-color: var(--bg);
   padding: 1em;
   border-radius: 15px;
+  box-shadow: 1px 9px 12px -3px rgba(171,151,151,0.89);
+  -webkit-box-shadow: 1px 9px 12px -3px rgba(171,151,151,0.89);
+  -moz-box-shadow: 1px 9px 12px -3px rgba(171,151,151,0.89);
 }
 .container h1 {
   text-align: center;
+  color: var(--primary-color);
 }
 .container hr {
-  border: 2px solid #858181;
+  border: 2px solid var(--primary-color);
 }
 
 table {
@@ -20,26 +36,45 @@ table {
 table td {
   text-align: center;
 }
+input[type="number"] {
+  font-family: var(--fontme);
+  background-color: var(--bg);
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+input[type="number"]:focus {
+  outline: none;
+  border: 2px solid var(--btn);
+}
 button {
+  font-family: var(--fontme);
   width: 50vh;
   padding: 0.5em;
   margin: 1em 0;
   border: none;
   border-radius: 5px;
-  background-color: #4CAF50;
-  color: white;
+  background-color: var(--btn);
+  color: #fff;
   cursor: pointer;
   font-weight: 600;
+}
+button:hover {
+  background-color: var(--btn-hover);
 }
 .price-box {
   width: 50vh;
   height: auto;
   margin: 0 auto;
-  background-color: #1667c4;
+  background-color: var(--box);
   padding: 1em;
   border-radius: 15px;
+  box-shadow: 1px 9px 12px -3px rgba(171,151,151,0.89);
+  -webkit-box-shadow: 1px 9px 12px -3px rgba(171,151,151,0.89);
+  -moz-box-shadow: 1px 9px 12px -3px rgba(171,151,151,0.89);
 }
-.price-box {
+.price-box p {
   color: #fff;
   font-weight: 600;
 }
