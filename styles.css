@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+/* CSS Reset */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 :root {
   --primary-color: #858181;
   --bg: #FAEBD7;
@@ -21,7 +28,7 @@
   -webkit-box-shadow: 1px 9px 12px -3px rgba(171,151,151,0.89);
   -moz-box-shadow: 1px 9px 12px -3px rgba(171,151,151,0.89);
 }
-.container h1 {
+.container h2 {
   text-align: center;
   color: var(--primary-color);
 }
